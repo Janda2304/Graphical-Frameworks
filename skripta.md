@@ -1,0 +1,19 @@
+# Grafické enginy a frameworky
+
+## 1. Úvod
+
+- ### Co je to vlastně ten herní engine?
+ #### herní engine je software, který slouží k vytváření videoher, cgi (computer generated imagery) a mnoho dalšího. Funguje jako kolekce mnoha menších funkcích, které usnadňují vytváření projektů, vytváří tím prostředí, kde nemusí člověk vše programovat od začátku, ale může využívat již vytvořených nástrojů. Vytváří tak jednoduché prostředí, které je efektivnější pro vývoj her a umožní vývojářům zaměřit se na kreativní aspekty projektu. Nejznámějšímí enginy jsou: Unreal Engine, Unity, Godot,
+- ### Co je to vlastně ten grafický framework/api?
+  #### grafický framework je sada nástrojů, která umožňuje vývojářům vytvářet grafické aplikace. Většinou obsahují nástroje pro přímou komunikaci s grafickou kartou počítače, renderování grafiky a detekci uživatelských vstupů. Typickým příkladem je OpenGL a DirectX11 nebo next-gen apis Vulkan a DirectX12
+## 2. Využití a Implementace (Engine vs Framework)
+- ### Implementace grafických frameworků
+  #### Grafické Frameworky/apis jsou ve většině případů napsány v programovacích jazycích C a C++, které mohou být pro mnohé programátory odrazující (z důvodu toho, že už umí jiný programovací jazyk, nebo že se nechtějí učit takto poměrně "složitý" programovací jazyk), proto existuje mnoho implementací (primárně OpenGL a Vulkan) pro ostatní programovací jazyky. Nejznámějšímí a nejpoužívanějšími je implementace OpenTK a Silk.NET pro programovací jazyky platformy .NET (primárně ale C#), PyOpenGL pro Python a JOGL a LWJGL pro Javu (pro zajímavost v LWJGL je napsaná populární videohra Minecraft)
+- ### Výhody a nevýhody Enginu a Frameworku 
+  #### Hlavními nevýhodami použití komerčně dostupných enginů je to, že se snaží být "univerzální" čili jsou většinou více náročné na hardware z důvodu toho, že obsahují mnoho většinou nepoužitých funkcí. Námitkou může být vytvoření vlastního herního enginu, tato námitka je sice naprosto validní, ale vytvoření vlastního herního enginu je extrémně náročný úkol, pokud se chceme grafickými možnostmi a jednoduchostí vyrovnat komerčně dostupným enginům. Vytvoření vlastních enginů zabere i velkým a zkušeným týmům mnoho let. Grafické frameworky jsou sice složitější, ale jsou mnohem méňe náročnější na hardware (pokud jsou správně užívány) a dá se v nich napsat jednoduchý "herní engine", který práci dokáže zjednodušit do přijatelné míry. Příkladem komerčně dostupného "zjednodušení" může být Microsoft XNA framework a nebo MonoGame.
+## 3. Další grafické enginy a frameworky
+ - ### Ostatní Enginy
+  #### Vedle velmi populárních a rozšířených enginů Unity, Unreal a Godot existuje i mnoho menších herních enginů, které většinou nejsou tak používané, ale mají své výhody. Například herní engine "Bevy Engine" je poměrně málo rozšířený z důvodu toho, že podporuje pouze programovací jazyk Rust, který není v oblasti game developmentu a herních enginů nijak rozšířený. Existuje i mnoho menších enginů, které jsou lepší spíše pro vývoj jednoduchých her ve 2D prostoru (např. GameMaker, RPG Maker). Existují i herní enginy, které jsou primárně určené pro vytváření projektů, které jsou určeny pro weby. 
+## 4. Objektově orientované programování v herních enginech a grafických frameworcích
+ - ### OOP v Enginech 
+   #### Většina komerčně dostupných herních enginů jsou založeny na objektově orientovaných programovacích jazycích (C++, C#), tyto enginy většinou mají jejich api založeno na využití různých aspektů OOP (inheritance atd.). Upřesdnosťovaným způsobem programování v těchto enginech je tedy objektově orientované programování. Využívání různorodých datových typů typických pro oop a způsobů pro oop je upřednostňováno
